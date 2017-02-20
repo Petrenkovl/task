@@ -1,0 +1,488 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+/*PADDING - 5%
+-----------------------------------------------------------------------------*/
+body{
+	padding: 0 5%;
+}
+
+/* .blog Styles
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.blog{
+	height: 100vh;
+	background:url(../img/design/buildings.jpg) center/cover fixed no-repeat;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	z-index:1;
+}
+.blog::before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: rgba(15,23,31,0.75);
+}
+.avatar{
+	width: 25rem;
+	height: 25rem;
+	border-radius: 50%;
+	margin: 10rem 0 4rem;
+	box-shadow: 0 0 0 10px rgba(255,255,255,0.3);
+}
+.blog h1{
+	font: 2.4rem "Taiga",sans-serif;
+	color: #ffffff;
+}
+.blog p{
+	font: 1.4rem "Raleway",sans-serif;
+	color: #37808f;
+	margin: 0 0 3rem;
+}
+/*   button Styles
+------------------------------------------------------------------------------*/
+.blog ul{
+	display: flex;
+	justify-content: center;
+	margin:0 0 3rem 0;
+}
+.button{
+	display: block;
+	width: 12rem;
+	height: 2.5rem;
+	border:0.2rem solid #bebebe;
+	border-radius: 0.5rem;
+}
+.blog ul li:nth-child(1){
+	margin: 0 1rem 0 0;
+}
+.blog ul li:nth-child(2){
+	margin: 0 0 0 1rem;
+}
+.blog ul li a{
+	text-decoration: none;
+	font: 1.5rem "Raleway",sans-serif;
+	color: #bebebe;
+	padding:0.3rem 0;
+}
+.blog a:active {
+	background:rgba(15,23,31,0.9); 
+}
+/* .item Styles
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.item{
+	padding:1rem 0;
+	text-align: center;
+	overflow: hidden;
+}
+.item h2{
+	font:900 3rem "Raleway",sans-serif;
+	color:#595959;
+	position: relative;
+	text-transform: uppercase;
+}
+.item h2::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10rem;
+	height: .8rem;
+	top: 4rem;
+	left: calc(50% - (10rem / 2));
+	background-color: #5CCDD9;
+}
+.About h3{
+	font:800 1.4rem "Raleway",sans-serif;
+	color: #595959;
+	margin:4rem 0 0 ;
+	text-transform: uppercase;
+}
+.About .Designer{
+	font:700 1.4rem "Raleway",sans-serif;
+	color: #595959;
+	margin:1rem 0 0 ;
+	text-align:center;
+	text-transform: uppercase;
+}
+.About p{
+	font: 1.3rem "Raleway",sans-serif;
+	margin:1rem 1rem 0 1rem;
+	text-align:justify ;
+	text-transform: uppercase;
+}
+.video{
+	margin:2rem 0 2rem ;
+}
+.video img{
+	width: 100%;
+	height: 100%;
+	margin: 0 0 2rem ;
+}
+/* .item service STYLES
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.service{
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	background: url("../img/design/Layer.jpg") center/cover fixed;;
+}
+.service::before{
+	z-index: -1;
+	content: "";
+	position: absolute;
+	top:0;
+	left: -5%;
+	display: block;
+	width: 110%;
+	height: 100%;
+	background:rgba(15,23,31,0.8); 
+}
+.Wrapper.My{
+	margin: 4rem 0 4rem 0;
+}
+.Wrapper.My article{
+	margin: 2rem 2rem 0 2rem;
+}
+.Wrapper.My{
+	margin: : 2rem 0 2rem 0;
+	display: flex;
+	flex-flow:column nowrap;
+    justify-content:flex-start;
+}
+.sprite1::before{
+	display: block;
+	margin: 0 auto;
+	top:0;
+	content: "";
+    width: 33px;
+    height: 41px;
+	background:url("../img/design/spritesheet.png") no-repeat;
+    background-position: -5px -5px;
+}
+.sprite2:before{
+	display: block;
+	margin: 0 auto;
+	top:0;
+	content: "";
+	width: 51px;
+    height: 41px;
+	background:url("../img/design/spritesheet.png") no-repeat;
+    background-position: -48px -5px;
+}
+.sprite3::before{
+	display: block;
+	margin: 0 auto;
+	top:0;
+	content: "";
+    width: 43px;
+    height: 41px;
+	background:url("../img/design/spritesheet.png") no-repeat;
+    background-position: -5px -56px;
+}
+.sprite4::before{
+	display: block;
+	margin: 0 auto;
+	top:0;
+	content: "";
+    width: 41px;
+    height: 41px;
+	background:url("../img/design/spritesheet.png") no-repeat; 
+    background-position: -58px -56px;
+}
+.sprite5::before{
+	display: block;
+	margin: 0 auto;
+	top:0;
+	content: "";
+    width: 43px;
+    height: 41px;
+	background:url("../img/design/spritesheet.png") no-repeat;
+    background-position: -109px -5px;
+}
+.sprite6::before{
+	display: block;
+	margin: 0 auto;
+	top:0;
+	content: "";
+    width: 39px;
+    height: 41px;
+    background:url("../img/design/spritesheet.png") no-repeat;
+    background-position: -109px -56px;
+	
+}
+.service h2{
+	color:#f3f3f3;
+}
+.Wrapper.My article h3{
+	margin: 1.8rem 0 0;
+	color: #B3B5B7;
+	font:bold 1.5rem "Raleway",sans-serif;
+	text-transform: uppercase; 
+}
+.Wrapper.My article p{
+	font:1.2rem/1.6rem "Raleway",sans-serif;
+	text-align:center;
+	color:#B4B6B8;
+	margin: 1rem 0 0;
+	text-transform: uppercase;
+}
+/* .galitems STYLES
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.galItems{
+    margin:4rem 0 0 0;
+}
+.galItems article {
+	position: relative;
+    width:100%;
+    overflow:hidden;
+    margin:.3rem 0 0 0;
+    line-height:0;
+}
+.galItems article img {
+   display:block;
+   width:100%;
+   height: 22rem;
+}
+.adressimg{
+	visibility: visible;
+    position:absolute;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:flex-end;
+    text-decoration:none;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:1rem 1.5rem;  
+    color:#9f9e9e;
+    background:rgba(23,23,23,.8);
+}
+.galItems .blink{
+	display: block;
+	position: absolute;
+	width: 5.7rem;
+	height: 5.7rem;
+	top:10%;
+	left: calc(50% - (5.7rem / 2));
+}
+.galItems article h3 {
+	text-transform: none;
+    color:#D0D0D0;
+  	font:300 2.4rem "Raleway",sans-serif;
+  	margin: 1rem 0 0 0;
+}
+.galItems article p{
+	color: #D0D0D0;
+	font:300 1.6rem "Raleway",sans-serif;
+	margin:.5rem 0 4rem;
+}
+
+/*	IPAD STYLES
+---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------*/
+@media(min-width: 768px){
+/*	.blog
+---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------*/
+.avatar{
+	width: 30rem;
+	height: 30rem;
+	margin: 15rem 0 3rem;	
+}
+.blog h1{
+	font: 4rem "Taiga",sans-serif;
+}
+.blog p{
+	font: 2rem "Raleway",sans-serif;
+	margin: 0 0 3rem;
+	text-transform: uppercase;
+}
+/*   button Styles
+------------------------------------------------------------------------------*/
+.blog ul{
+	margin:0 0 3rem 0;
+}
+.button{
+	width: 16rem;
+	height: 5rem;
+	border-radius: 1rem;
+}
+.blog ul li a{
+	font: 2rem "Raleway",sans-serif;
+	padding: 1rem 0 0;
+}
+/* .item Styles
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.About h3{
+	font:800 2.4rem "Raleway",sans-serif;
+}
+.About .Designer{
+	font:700 2.4rem "Raleway",sans-serif;
+	margin:2rem 0 0;
+}
+.About p{
+	font: 2.3rem "Raleway",sans-serif;
+	margin:2rem 0rem 0 0rem;
+	text-align:justify;
+}
+/* .item service STYLES
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.Wrapper.My{
+	display: flex;
+	justify-content: flex-start;
+	flex-flow:row wrap;
+	margin: 4rem 0 4rem;
+}
+.Wrapper.My article{
+	width: calc(50% - 4rem);	
+}
+/* .galitems STYLES
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.galItems{
+	display:flex;
+    flex-flow:row wrap;
+
+    margin:10rem 0 0 0;
+}
+.galItems article {
+    width:50%;
+    overflow:hidden;
+    position:relative;
+    margin:0;
+}
+.galItems article img {
+   display:block;
+   width:100%;
+   height: 100%;
+}
+/*	lAPTOP STYLES
+---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------*/
+@media(min-width: 1170px){
+/*	PADDING - 0%*/
+body{
+	padding: 0;
+}
+
+.avatar{
+	width: 35.5rem;
+	height: 35.5rem;
+	margin: 5% 0 1rem;	
+}
+.blog h1{
+	font: 4.4rem "Taiga",sans-serif;
+}
+.blog p{
+	font: 2.4rem "Raleway",sans-serif;
+	margin: 0 0 3rem;
+}
+/*   button Styles
+------------------------------------------------------------------------------*/
+.blog  li:hover{
+	transform:translate(0px,.2rem);
+}
+/* .item Styles
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.item{
+	height: 100vh;
+}
+.Wrapper{
+	width: 1060px;
+	margin: 0 auto;
+}
+.About article{
+	margin: 10rem 0 0 0;
+	display: flex;
+	justify-content:space-between;
+}
+.AboutMe{
+	width: 52%;
+	margin: 0 6rem 0 0;
+	text-align: left;	
+}
+.video{
+	width: 46.5%;
+}
+.video img{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.item h2{
+	font:900 4.4rem "Raleway",sans-serif;
+	margin: 8rem 0 0;
+}
+.item h2::after{
+	top: 6.5rem;
+}
+.About h3{
+	font:800 2.4rem "Raleway",sans-serif;
+	margin:0 0 2.5rem;
+}
+.About .Designer{
+	font:700 2.4rem "Raleway",sans-serif;
+	color: #595959;
+	margin:0 0 3rem;
+	text-align:left;
+}
+.About p{
+	font: 1.6rem/4.2rem "Raleway",sans-serif;
+	text-align:left;
+}
+/* .item service STYLES
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.Wrapper.My{
+	margin: 10rem auto;
+}
+.Wrapper.My article {
+    width:calc((100% - 9.4675%) / 3);
+    margin:0 calc(9.4675% / 2) 4rem 0;
+}
+.Wrapper.My article:nth-of-type(3n){
+	  margin:0 0 4rem;
+}
+.Wrapper.My article h2{
+	font:bold 2rem "Raleway",sans-serif;
+}
+/* .galitems STYLES
+-------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+.galItems{
+	display: flex;
+    flex-flow:row wrap;
+    margin:10rem 0 0;
+}
+.galItems article {
+    width:25%;
+    margin:0;
+}
+.adressimg{
+    bottom:-100%;
+    transition:all 1.5s;
+}
+.galItems article:hover a {
+    bottom:0;
+}
+.galItems article img {
+   display:block;
+   width:100%;
+   height: 100%;
+}
+}
